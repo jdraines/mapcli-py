@@ -1,0 +1,13 @@
+[project]
+name = "{{new_cli_name}}"
+version = "0.1.0"
+description = ""
+readme = "README.md"
+requires-python = "=={{python_version}}"
+dependencies = [
+    "mapcli"
+]
+
+
+[project.scripts]
+{{new_cli_name}} = "{{ new_cli_name | replace("-", "_") }}.main:main"
